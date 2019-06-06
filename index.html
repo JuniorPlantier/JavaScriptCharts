@@ -2,9 +2,11 @@
 	<head>
 		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 		<script>
-		    google.charts.load('current', {packages: ['corechart']});
+		    google.charts.load('current', {packages: ['corechart'], language: 'pt'});
 		
-			function desenharPizza() {
+			function desenharGraficos() {
+				/* -- gráfico de pizza --
+  				   -------------------------------------------------------------------------------------------------------------- */
 				var tabela = new google.visualization.DataTable();
 				tabela.addColumn('string', 'Categorias');
 				tabela.addColumn('number', 'Valores');
@@ -39,12 +41,43 @@
 				
 				var graficoPizza = new google.visualization.PieChart(document.getElementById('graficoPizza'));
 				graficoPizza.draw(tabela, opcoes);
+				
+				/* -- gráfico de linha --
+  				   -------------------------------------------------------------------------------------------------------------- */
+				var tabela = new google.visualization.DataTable();
+				tabela.addColumn('string', 'mês');
+				tabela.addColumn('number', 'gastos');
+				tabela.addRows([
+								['jan',800],
+								['fev',400],
+								['mar',1100],
+								['abr',400],
+								['mai',500],
+								['jun',750],
+								['jul',1500],
+								['ago',650],
+								['set',850],
+								['out',400],
+								['nov',1000],
+								['dez',720]
+							  ]);
+							  
+				var opcoes = {
+					title: 'Gastos por mês',
+					width: 650,
+					height: 300,
+					vAxis: {format: 'currency'}
+				};
+				
+				var graficoLinha = new google.visualization.LineChart(document.getElementById('graficoLinha'));
+				graficoLinha.draw(tabela, opcoes);
 			}
 			
-			google.charts.setOnLoadCallback(desenharPizza);
+			google.charts.setOnLoadCallback(desenharGraficos);
 		</script>
 	</head>
 	<body>
 		<div id="graficoPizza"></div>
+		<div id="graficoLinha"></div>
 	</body>
 </html>
