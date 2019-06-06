@@ -1,0 +1,10 @@
+     Qual a diferença de [] e {} no JavaScript?
+Basicamente utiliza-se as chaves {} quando se pretende declarar um objeto ou em funções.
+Já na utilização de colchetes [], você estará criando / indicando um array.
+
+Com {} pode ser usado para criar um objeto com sub-valores e [] para criar um objeto array.
+
+A vantagem de usar uma coisa ou outra vai depender muito da sua aplicação. Se você quer apenas armazenar valores simples, separados por índices, use array []. Se quiser armazenar valores que contenham sub-valores em um objeto específico, use {}.
+--
+--
+
