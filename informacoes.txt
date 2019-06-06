@@ -1,8 +1,5 @@
-Biblioteca utilizada neste link https://www.gstatic.com/charts/loader.js
-Pra pegar a versao mais recente https://developers.google.com/chart/interactive/docs/basic_load_libs
-
-- fazer o curso de https://cursos.alura.com.br/course/data-visualization
-
-qual é a diferença em f5, crtl+f5, crtl+r, botão recarregar.
-
-Para sabermos quais gráficos estão no pacote corechart que estamos usando, basta acessarmos a parte de referência da documentação (https://developers.google.com/chart/glossary). 
+--
+Para pegar a versão mais recente da biblioteca: https://developers.google.com/chart/interactive/docs/basic_load_libs
+--
+Para consultar a documentação da API: https://developers.google.com/chart/
+--
