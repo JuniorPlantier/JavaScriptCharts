@@ -111,28 +111,35 @@ function desenharGraficos() {
 	var tabela = new google.visualization.DataTable();
 	tabela.addColumn('string', 'Categorias');
 	tabela.addColumn('number', 'Valores');
-	tabela.addColumn({type: 'number', role: 'annotation'});
+	tabela.addColumn({type: 'string', role: 'annotation'});
 	tabela.addColumn({type: 'string', role: 'style'});
 	tabela.addRows(
 		[
-			['Educação', 2000, 2000, 'blue'],
-			['Transporte', 500, 500, 'gray'],
-			['Lazer', 230, 230, 'gray'],
-			['Saúde', 50, 50, 'gray'],
-			['Cartão de crédito', 900, 900, '#8904B1'],
-			['Alimentação', 260, 260, 'gray']
+			['Educação', 2000, 'R$2.000,00', 'blue'],
+			['Transporte', 500, 'R$500,00', 'gray'],
+			['Lazer', 230, 'R$230,00', 'gray'],
+			['Saúde', 50, 'R$50,00', 'gray'],
+			['Cartão de crédito', 900, 'R$900,00', '#8904B1'],
+			['Alimentação', 260, 'R$260,00', 'gray']
 		]
 	);
+	tabela.sort([{column: 1, desc: true}]);
 	
 	var opcoes = {
 		titulo: 'Tipo de Gastos',
 		height: 400,
 		width: 800,
-		vAxis: { gridlines: {count: 0, color: 'transparent'} },
-		legend: 'none'
+		vAxis: { gridlines: { count: 0, color: 'transparent'} },
+		hAxis: { gridlines: { color: 'transparent' },
+			     format: 'currency',
+				 textPosition: 'none'
+			   },
+		legend: 'none',
+		annotations: {alwaysOutside: true}
 	}
 	
-	var graficoColunaSurpresa = new google.visualization.ColumnChart(document.getElementById('graficoColunaSurpresa'));
+	//var graficoColunaSurpresa = new google.visualization.ColumnChart(document.getElementById('graficoColunaSurpresa'));
+	var graficoColunaSurpresa = new google.visualization.BarChart(document.getElementById('graficoColunaSurpresa'));
 	graficoColunaSurpresa.draw(tabela, opcoes);
 
 }
