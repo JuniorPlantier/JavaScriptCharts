@@ -142,4 +142,9 @@ function desenharGraficos() {
 	var graficoColunaSurpresa = new google.visualization.BarChart(document.getElementById('graficoColunaSurpresa'));
 	graficoColunaSurpresa.draw(tabela, opcoes);
 
+		/* -- gráfico de barras com arquivo json --
+	   -------------------------------------------------------------------------------------------------------------- */
+	   var tabela = new google.visualization.DataTable();
+	   
+	
 }

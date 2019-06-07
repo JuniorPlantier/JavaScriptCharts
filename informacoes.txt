@@ -10,3 +10,4 @@ Gráfico de Linha
 Nos mandaram uma planilha de gastos por mês, para mostrarem aos clientes a progressão de gastos ao longo do tempo. 
 O gráfico de linha, é uma das melhores alternativas para este objetivo.
 --
+Exemplo de arquivos json para o Google Charts - https://developers.google.com/chart/interactive/docs/php_example
