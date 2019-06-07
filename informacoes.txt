@@ -3,7 +3,10 @@ Para pegar a versão mais recente da biblioteca: https://developers.google.com/c
 --
 Para consultar a documentação da API: https://developers.google.com/chart/
 --
-Grafico de Linha
+Quando falamos sobre gráficos, é comum usarmos as nomenclaturas de eixo x(horizontal) e eixo y(vertical). 
+A biblioteca achou melhor já nomeá-los assim: hAxis e vAxis, de eixo horizontal e eixo vertical.
+--
+Gráfico de Linha
 Nos mandaram uma planilha de gastos por mês, para mostrarem aos clientes a progressão de gastos ao longo do tempo. 
 O gráfico de linha, é uma das melhores alternativas para este objetivo.
-
+--

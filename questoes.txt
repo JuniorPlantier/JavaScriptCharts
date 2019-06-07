@@ -7,4 +7,3 @@ Com {} pode ser usado para criar um objeto com sub-valores e [] para criar um ob
 A vantagem de usar uma coisa ou outra vai depender muito da sua aplicação. Se você quer apenas armazenar valores simples, separados por índices, use array []. Se quiser armazenar valores que contenham sub-valores em um objeto específico, use {}.
 --
 --
-
