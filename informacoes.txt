@@ -11,3 +11,6 @@ Nos mandaram uma planilha de gastos por mês, para mostrarem aos clientes a prog
 O gráfico de linha, é uma das melhores alternativas para este objetivo.
 --
 Exemplo de arquivos json para o Google Charts - https://developers.google.com/chart/interactive/docs/php_example
+--
+Dentro do Jquery iremos utilizar o Ajax
+Escrevemos o JSON e usamos a função do jQuery para pegar o arquivo.

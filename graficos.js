@@ -142,9 +142,28 @@ function desenharGraficos() {
 	var graficoColunaSurpresa = new google.visualization.BarChart(document.getElementById('graficoColunaSurpresa'));
 	graficoColunaSurpresa.draw(tabela, opcoes);
 
-		/* -- gráfico de barras com arquivo json --
+	/* -- gráfico de barras com arquivo json --
 	   -------------------------------------------------------------------------------------------------------------- */
-	   var tabela = new google.visualization.DataTable();
-	   
+	var dadosJson = new $.ajax({
+		url: 'dados.json',
+		dataType: 'json',
+		async: false
+		//contentType: 'application-json'
+	}).responseText;
+	
+	var tabela = new google.visualization.DataTable(dadosJson);
+	tabela.sort([{column: 1, desc: true}]);
+	
+	var opcoes = {
+		titulo: 'Usuários e Poupanças',
+		height: 400,
+		width: 800,
+		legend: 'none',
+		hAxis: {gridlines: {color:'transparent'}},
+		annotations: {alwaysOutside: true}
+	}
+
+	var graficoJson = new google.visualization.BarChart(document.getElementById('graficoBarrasJson'));
+	graficoJson.draw(tabela, opcoes);
 	
 }

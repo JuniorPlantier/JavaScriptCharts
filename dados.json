@@ -5,13 +5,17 @@
 		},
 		{ "label": "Valor",
 		  "type":"number"
+		},
+		{ "type": "string", 
+			"role": "annotation"
 		}
 	],
 	
 	"rows": [
 		{ "c": [
-				 {"v": "João Antônio Marques", "f":null}, 
-				 {"v": 25.110, "f":null}
+						 {"v": "João Antônio Marques", "f":null}, 
+						 {"v": 17.110, "f":null},
+						 {"v": "R$17.110", "f":null}
 			   ]
 		},
 		{ "c": [

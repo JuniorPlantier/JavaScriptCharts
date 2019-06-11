@@ -10,3 +10,15 @@ A vantagem de usar uma coisa ou outra vai depender muito da sua aplicação. Se 
 Alura -> Curso de visualização de dados.
 --
 --
+		O que é jQuery?
+É uma biblioteca escreita em JavaScript. Seu foco é oferecer funções prontas para uso, simplificando a programação.
+		
+		O que é Ajax do jQuery?
+AJAX é um acrônimo de Asynchronous JavaScript And XML.
+O AJAX é uma junção feita com JavaScript de algumas tecnologias da web para fazer com que as páginas fossem recarregadas em partes, sem a necessidade de atualizar a página inteira. Isso acontece pois o AJAX permite que as partes das páginas se atualizem sem travar o navegador, ou de modo assíncrono, ao trocar informações com um servidor.
+
+De acordo com Jesse James Garrett, temos 6 tecnologias unidas pelo JavaScript (e, se contarmos com ele, 7); são elas o HTML (ou XHTML) e CSS para mostrar adequadamente os dados na página, o Modelo de Documento de Objetos (DOM) para gerar interações dinâmicas com os dados, mais o JSON ou XML para a troca ou transporte de dados, junto com XSLT para a manipulação dos dados, e o objeto XMLHttpRequest para possibilitar a comunicação assíncrona.
+
+Com o AJAX dentro da biblioteca do jQuery, como fizemos no curso, podemos acessar arquivos e passar essas informações sem a necessidade de uma atualização da página inteira na qual os nossos gráficos são exibidos.
+
+Com o AJAX dentro da biblioteca do jQuery, como fizemos no curso, podemos acessar arquivos e passar essas informações sem a necessidade de uma atualização da página inteira na qual os nossos gráficos são exibidos.
