@@ -145,7 +145,8 @@ function desenharGraficos() {
 	/* -- gráfico de barras com arquivo json --
 	   -------------------------------------------------------------------------------------------------------------- */
 	var dadosJson = new $.ajax({
-		url: 'dados.json',
+		//url: 'dados.json',
+		url: 'https://gist.githubusercontent.com/JuniorPlantier/4d8406f047bdee7bc9779df704d2ff67/raw/7ad80169e5f9c6a5b7404fc5c4b5e4ed34327877/dados.json',
 		dataType: 'json',
 		async: false
 		//contentType: 'application-json'
