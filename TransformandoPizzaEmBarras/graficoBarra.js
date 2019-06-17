@@ -1,4 +1,4 @@
-function desenharGraficoPizza(){
+function desenharGraficoPizza() {
 
 	/*var tabela = new google.visualization.DataTable();
 	tabela.addColumn('string','Categorias');
@@ -101,6 +101,5 @@ function desenharGraficoPizza(){
 			};
 	
 	var grafico = new google.visualization.BarChart(document.getElementById('graficoPizza'));
-            grafico.draw(tabela, opcoes);
-    
+            grafico.draw(tabela, opcoes);   
 }
