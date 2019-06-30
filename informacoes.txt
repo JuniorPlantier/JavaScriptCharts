@@ -14,3 +14,12 @@ Exemplo de arquivos json para o Google Charts - https://developers.google.com/ch
 --
 Dentro do Jquery iremos utilizar o Ajax
 Escrevemos o JSON e usamos a função do jQuery para pegar o arquivo.
+--
+Como podemos ajustar a legenda? Exemplo: Cartão de...
+Ajustando a área do gráfico e a margem right dentro de chartArea.
+--
+Para acessar a planilha do Google, é necessário alguns passos:
+1. autorizar acesso na planilha (configurações do Google).
+2. escrever um código para conectar a planilha com a nossa app gcharts.
+    - montar um link - endereço da planilha
+    - codificar
