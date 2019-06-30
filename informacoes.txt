@@ -24,3 +24,11 @@ Para acessar a planilha do Google, é necessário alguns passos:
     - montar um link - endereço da planilha
     - codificar
 --
+Socket no servidor
+O socket escuta a mudança de dados e emite uma mensagem comunicando que o dado mudou.
+O socket é um conector que funciona à base de escuta e emissão de mensagens.
+
+Sobre o socket, quais são as funções que usaremos no nosso gráfico?
+socket.on() e socket.connect().
+Quando vamos usar o socket, a função socket.on() é usada para o quando algo vai 
+acontecer e a socket.connect() para nos conectarmos ao socket.
